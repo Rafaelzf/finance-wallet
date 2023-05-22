@@ -1,12 +1,3 @@
-# Boas vindas ao processo seletivo para o Time de Instrução de Front-End
-
-Para realizar o projeto, atente-se a cada passo descrito a seguir, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
-
-Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir deste repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
-
-Clone este repositório, abra uma branch sua e crie uma Pull Request a partir dela. O nosso avaliador automatizado irá rodar nela através da integração com o GitHub e será importante para a análise da sua entrega.
-
-## Entregáveis
 
 <details>
   <summary><strong>👨‍💻 O que deverá ser desenvolvido</strong></summary><br />
@@ -22,8 +13,6 @@ Clone este repositório, abra uma branch sua e crie uma Pull Request a partir de
 <details>
   <summary><strong>:memo: Habilidades</strong></summary><br />
 
-Neste projeto, verificamos se você é capaz de:
-
 - Criar um _store_ Redux em aplicações React
 
 - Criar _reducers_ no Redux em aplicações React
@@ -38,59 +27,7 @@ Neste projeto, verificamos se você é capaz de:
 
 </details>
 
-## Orientações
 
-<details>
-  <summary><strong>‼️ Antes de começar a desenvolver</strong></summary><br />
-
-  1. Após clonar e acessar o repositório, instale as dependências e inicialize o projeto
-     - Instale as dependências:
-       - `npm install`
-     - Inicialize o projeto:
-       - `npm start` (uma nova página deve abrir no seu navegador com um texto simples)
-     - Verifique que os testes estão executando:
-       - `npm test` (os testes devem rodar e falhar)
-
-  2. Crie uma branch a partir da branch `master` e mãos à obra!
-
-</details>
-
-<details>
-  <summary><strong>⌨️ Durante o desenvolvimento</strong></summary><br />
-
-- Faça `commits` das alterações que você fizer no código regularmente
-
-- Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
-
-</details>
-
-<a name="testes"></a>
-
-<details>
-  <summary><strong>🛠 Testes</strong></summary><br />
-
-- <details><summary><b> Execução de testes de requisito</b></summary>
-
-  Os testes deste projeto foram feitos utilizando o [Cypress](https://www.cypress.io/how-it-works/). É utilizada nos testes a resolução `1366 x 768` (1366 pixels de largura por 768 pixels de altura) para testes de layout. Logo, recomenda-se desenvolver seu projeto usando a mesma resolução, via instalação [deste plugin](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh?hl=en) do `Chrome` para facilitar a configuração dessa resolução, por exemplo.
-
-  Para o projeto ser validado, todos os testes de comportamento devem passar. É possível testar isso localmente rodando `npm run cy`. Esse comando roda a suite de testes do Cypress que valida se o fluxo geral e os requisitos funcionais estão funcionando como deveriam. Você pode também executar o comando `npm run cy:open` para ter um resultado visual dos testes executados.
-
-  Esses testes não consideram o layout de maneira geral, mas sim os atributos e informações corretas, então preste atenção nisso! Os testes te darão uma mensagem de erro caso não estejam passando (seja qual for o motivo). 😉
-
-  **Atenção:** Sua aplicação deve estar rodando para o Cypress conseguir testar.
-  </details>
-
-- <details><summary><b> Execução de um teste específico</b></summary>
-
-  Para executar somente uma `spec` de testes, você pode ou rodar somente um arquivo de teste com o comando `npm run cy -- --spec cypress/integration/nomeDoArquivo_spec.js`, ou também pode selecionar qual delas você deseja após executar o comando `npm run cy:open`.
-
-  ![image](./imgs/cy-specs.png)
-
-  Além disso ainda é possível rodar apenas um trecho de um `spec`, basta utilizar a função .only após o `describe`, `it` ou `test`. Com isso, será possível que apenas parte de um teste rode localmente e seja avaliado.
-
-  ![image](./imgs/itOnly.png)
-
-  </details>
 
 - <details><summary><b> Execução de teste de cobertura</b></summary>
 
@@ -193,111 +130,10 @@ Neste projeto, verificamos se você é capaz de:
 
 </details>
 
-<details>
-  <summary><strong>💻 Protótipo do projeto no Figma</strong></summary><br />
 
-  Além da qualidade do código e do atendimento aos requisitos, um bom layout é um dos aspectos responsáveis por melhorar a usabilidade de uma aplicação!
 
-  Para isso, disponibilizamos esse [protótipo do Figma](https://www.figma.com/file/ibAEAbS7A6EBprCvXJNhbt/%5BProjeto%5D%5BFrontend%5D-TrybeWallet?node-id=0%3A1) para lhe ajudar !
 
-  ⚠️ A estilização de sua aplicação utilizando esse protótipo é apenas uma **sugestão** e seu uso é **opcional**. Sinta-se à vontade para modificar o layout e deixá-lo do seu jeito.
 
-</details>
-
-## Requisitos
-
-:warning: **PULL REQUESTS COM ISSUES DE LINTER NÃO SERÃO AVALIADAS.** :warning:
-
-:warning: Os gifs são meramente ilustrativos para visualizar o fluxo da aplicação, os nomes devem seguir os requisitos e não o gif. :warning:
-
----
-
-## Página de Login
-
-Crie uma página para que a pessoa usuária se identifique, com email e senha. Esta página deve ser a página inicial de seu aplicativo.
-
-<details><summary> Página de Login</summary>
-
-  ![image](./imgs/login.gif)
-</details><br />
-
-## 1. Crie uma página inicial de login com os seguintes campos e características
-
-- A rota para esta página deve ser `/`;
-
-- <details><summary> Você deve criar um local para que a pessoa usuária insira seu e-mail e senha:</summary>
-
-  - O campo para o e-mail precisa ter o atributo `data-testid="email-input"`;
-  - O email precisa estar em um formato válido, como 'alguem@alguem.com';
-  - O campo para a senha precisa ter o atributo `data-testid="password-input"`;
-  - A senha precisa possuir 6 ou mais caracteres.
-
-</details>
-
-- <details><summary> Crie um botão com o texto <code>Entrar</code>:</summary>
-
-  - O botão precisa estar **desabilitado** caso o e-mail não tenha um formato válido ou a senha possua um tamanho menor que 6 caracteres;
-
-  - Salve o email no estado global da aplicação, com a chave **_email_**, assim que a pessoa usuária _logar_;
-
-  - A rota deve ser mudada para `/carteira` após o clique no botão '**Entrar**'.
-
-</details>
-
-<br />
-<details><summary><strong>O que será verificado</strong></summary><br />
-
-- A rota para esta página é `"/"`
-- É renderizado um elemento para que o usuário insira seu email e senha
-- É renderizado um botão com o texto `"Entrar"`
-- <details><summary> Foram realizadas as seguintes verificações nos campos de email, senha e botão:</summary>
-
-  - É um e-mail no formato válido;
-  - A senha tem 6 ou mais caracteres;
-  - Desabilita o botão `Entrar` caso e-mail e/ou senha estiverem no formato inválido
-  - Habilita o botão `Entrar` caso e-mail e senha sejam válidos
-  </details><br />
-- Salva o email no estado da aplicação, com a chave email, assim que o usuário logar
-- A rota é alterada para `"/carteira"` após o clique no botão
-
-</details>
-
----
-
-## Página da Carteira
-
-Crie uma página para gerenciar a carteira de gastos em diversas moedas e que traga a despesa total em real que é representado pelo código 'BRL'. Esta página deve ser renderizada por um componente chamado **_Wallet_**.
-
-- A rota para esta página deve ser `/carteira`;
-
-<details><summary> Página da carteira:</summary>
-  
-  ![image](./imgs/carteira.gif)
-</details><br />
-
----
-
-## Header
-
-## 2. Crie um header para a página de carteira contendo as seguintes características
-
-- O componente `Header` deve ser renderizado dentro do componente [`Wallet`](#página-da-carteira);
-
-- <details><summary> Um elemento que exiba o e-mail da pessoa usuária que fez login:</summary>
-
-  - Adicione o atributo `data-testid="email-field"`.
-
-  - :bulb: **Dica**: você deve pegar o e-mail do estado global da aplicação (no Redux).
-
-</details>
-
-- <details><summary> Um elemento com a despesa total gerada pela lista de gastos:</summary>
-
-  - Adicione o atributo `data-testid="total-field"` neste elemento;
-
-  - Inicialmente esse elemento deve exibir o valor `0`;
-
-</details>
 
 - <details><summary> Um elemento que mostre qual câmbio está sendo utilizado, que neste caso será 'BRL':</summary>
 
