@@ -1,0 +1,43 @@
+.table {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(9, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 10px;
+}
+
+.thead {
+  font-weight: bold;
+}
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.thead .cell {
+  font-weight: bold;
+  color: var(--primary-white);
+}
+
+.thead .cell:not(:last-child) {
+  border-right: 1px solid var(--primary-white);
+}
+.tbody {
+  border-top: 1px solid var(--primary-green);
+}
+
+.tbody .cell {
+  color: var(--primary-green);
+}
+
+.tbody .cell button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.cell {
+  padding: 10px;
+}

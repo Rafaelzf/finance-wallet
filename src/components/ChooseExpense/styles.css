@@ -1,0 +1,44 @@
+.container-ChooseExpense ul {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  row-gap: 30px;
+  background-color: var(--second-blue);
+  padding: 30px 40px;
+}
+
+.container-ChooseExpense ul li span {
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.container-ChooseExpense input,
+.container-ChooseExpense select {
+  height: 40px;
+  border: 1px solid var(--primary-blue);
+  color: var(--primary-blue);
+  border-radius: var(--second-radius);
+  padding: 0 10px;
+  background-color: transparent;
+}
+
+.container-ChooseExpense footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-expenses {
+  display: inline-block;
+  margin: 28px auto 0 auto;
+  width: 330px;
+  text-align: center;
+  border-radius: var(--second-radius);
+  background-color: var(--primary-green);
+  color: var(--primary-white);
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+}

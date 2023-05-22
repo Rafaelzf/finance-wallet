@@ -1,0 +1,13 @@
+:root {
+  --primary-blue: #003be5;
+  --second-blue: #e1e5eb;
+  --primary-green: #2fc18c;
+  --primary-pink: #df3c6d;
+  --primary-white: #fff;
+  --default-font: "Epilogue";
+
+  --primary-radius: 10px;
+  --second-radius: 5px;
+  --primary-size: 14px;
+  --second-size: 12px;
+}

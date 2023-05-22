@@ -1,0 +1,29 @@
+.WalletContainer {
+  width: auto;
+  max-width: 1037px;
+  max-height: 482px;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--primary-white);
+  margin: 0 auto;
+  box-shadow: -4px 9px 13px rgba(5, 18, 54, 0.4);
+  border-radius: 0px 0px 10px 10px;
+  position: relative;
+  z-index: 2;
+}
+.TableContainer {
+  width: auto;
+  max-width: 1155px;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--primary-blue);
+  margin: 0 auto;
+  box-shadow: -4px 9px 13px rgba(5, 18, 54, 0.4);
+  border-radius: 10px;
+  z-index: 1;
+  margin-top: -10px;
+}

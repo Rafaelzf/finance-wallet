@@ -1,0 +1,54 @@
+.container {
+  width: 100%;
+}
+
+.container ul {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container ul li {
+  color: var(--primary-blue);
+  min-height: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.value {
+  display: inline-block;
+}
+
+.container ul li span {
+  display: inline-block;
+  height: 100%;
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+.container ul li.perfil {
+  color: var(--primary-green);
+  padding-left: 36px;
+  background: left center url("../../img/icons/perfil.svg") no-repeat;
+  background-size: contain;
+}
+
+.totalExpenses {
+  font-weight: bold;
+  padding-left: 36px;
+  background: left center url("../../img/icons/Moedas.svg") no-repeat;
+  background-size: contain;
+}
+
+.container header {
+  margin-bottom: 51px;
+}
+
+.container header {
+  padding: 0 40px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
